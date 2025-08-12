@@ -29,7 +29,9 @@ const info = {
       link: "https://buildia-92b37.web.app/",
       challenges:
         "Implementing robust, role-based access control across multiple dashboards and ensuring the security of private routes with JWT middleware.",
+      img: "https://i.ibb.co.com/r2gMs99d/buildia.png",
     },
+
     {
       title: "Sproutly: A Gardening Community Hub",
       description:
@@ -39,6 +41,7 @@ const info = {
       link: "https://sproutly-515fc.web.app/",
       challenges:
         "Implementing a complex filtering system for user-generated content and managing the state for a seamless dark/light theme toggle.",
+      img: "https://i.ibb.co.com/TMT1VfTv/sproutly.png",
     },
     {
       title: "Food-circle: A Food Sharing Platform",
@@ -48,7 +51,9 @@ const info = {
         "React, Node.js, Express, MongoDB, Firebase, JWT, Framer Motion, TanStack Query",
       github: "https://github.com/tasinvoid/food-circle-client",
       link: "https://food-circle-fce91.web.app/",
-      challenges: "Handling real-time updates and managing concurrent requests within the food sharing system, while optimizing performance for a dynamic list of items."
+      challenges:
+        "Handling real-time updates and managing concurrent requests within the food sharing system, while optimizing performance for a dynamic list of items.",
+      img: "https://i.ibb.co.com/rR6pJRKc/food-share.png",
     },
   ],
   // ============ EDUCATION ============
@@ -57,13 +62,14 @@ const info = {
       school: "Yunnan University",
       degree: "Bachelor of Electrical Information Engineering",
       duration: "2018 - 2022",
-      image: "https://i.ibb.co.com/GQqBbSFh/png-clipart-yunnan-university-yunnan-normal-university-yulin-normal-university-somaiya-vidyavihar.png"
+      image:
+        "https://i.ibb.co.com/GQqBbSFh/png-clipart-yunnan-university-yunnan-normal-university-yulin-normal-university-somaiya-vidyavihar.png",
     },
     {
       school: "Programming Hero",
       degree: "Web Development",
       duration: "2025 - 2025",
-      image: "https://i.ibb.co.com/dsfBdL3S/Ix-I18-R8-Y-400x400.jpg"
+      image: "https://i.ibb.co.com/dsfBdL3S/Ix-I18-R8-Y-400x400.jpg",
     },
   ],
 
@@ -73,6 +79,14 @@ const info = {
     description:
       "Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions. If you have a specific question or comment, please feel free to email me directly at shoaibmahmudtasin@gmail.com. I make an effort to respond to all messages within 24 hours, although it may take me longer during busy periods. Finally, if you prefer to connect on social media, you can connect with me using the social media links below.",
   },
+  certificates: [
+    {
+      title: "Bsc. Electrical information engineering",
+      description: "Provided by Yunnan University & Authorized by YNU",
+      icon: "ibm",
+      link: "https://i.ibb.co.com/rK3kzf8V/5cbbf7ef-808a-4e4f-8dc8-a0ee190987b7.jpg",
+    },
+  ],
 
   // ============ FOOTER ============
   footer: "© 2025 Shoaib Mahmud Tasin. All Rights Reserved",

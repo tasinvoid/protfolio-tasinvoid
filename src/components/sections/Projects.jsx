@@ -18,6 +18,7 @@ function Projects() {
             github={project.github}
             link={project.link}
             challenges={project.challenges}
+            img={project.img}
           />
         );
       })}

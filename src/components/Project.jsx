@@ -7,9 +7,16 @@ function Project({
   link,
   github,
   challenges,
+  img,
 }) {
   return (
     <div className="hover:bg-zinc-100 hover:dark:bg-zinc-900 transition-all duration-300 p-6 md:rounded-xl">
+      <div className="my-5">
+        {/* =========== PROJECT DEMO =========== */}
+        <a href={link}>
+          <img className="w-70 h-40 rounded-2xl" src={img} alt="" />
+        </a>
+      </div>
       <div className="flex flex-wrap gap-2 py-2">
         {/* =========== TECHNOLOGIES USED =========== */}
         {technologies.split(",").map((tech, index) => (

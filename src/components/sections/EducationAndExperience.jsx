@@ -4,10 +4,12 @@ import { FaBuildingUser } from "react-icons/fa6";
 
 import { PiCertificateFill } from "react-icons/pi";
 
-
 function EducationAndExperience() {
   return (
-    <section id="education-and-experience" className="mt-20 mx-4 lg:mx-20 flex flex-col md:flex-row gap-4 md:gap-2">
+    <section
+      id="education-and-experience"
+      className="mt-20 mx-4 lg:mx-20 flex flex-col md:flex-row gap-4 md:gap-2"
+    >
       {/* =========== EDUCATION =========== */}
       <div className="w-full md:w-[80%]">
         {/* =========== EDUCATION TITLE =========== */}
@@ -37,7 +39,11 @@ function EducationAndExperience() {
                 <div className="grow p-2 pb-8">
                   {/* =========== IMAGE AND SCHOOL NAME =========== */}
                   <h3 className="flex items-center gap-x-2 font-semibold text-zinc-800 dark:text-white">
-                    <img className="w-9 h-9 rounded-full" src={edu.image} alt="School Logo" />
+                    <img
+                      className="w-9 h-9 rounded-full"
+                      src={edu.image}
+                      alt="School Logo"
+                    />
                     <div className="leading-5">
                       {edu.school}
                       {/* =========== DEGREE =========== */}
@@ -46,7 +52,6 @@ function EducationAndExperience() {
                       </p>
                     </div>
                   </h3>
-                  
                 </div>
               </div>
             </div>
@@ -65,8 +70,40 @@ function EducationAndExperience() {
         >
           <div className="hs-carousel relative overflow-hidden w-full h-48 bg-white dark:bg-gray-800 rounded-lg">
             <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-              
-              
+              {user_info.certificates.map((cert, index) => {
+                return (
+                  <div className="hs-carousel-slide relative" key={index}>
+                    
+                    <div className="flex justify-center items-center h-full bg-gray-100 p-6 dark:bg-neutral-900">
+                      <div className="hs-tooltip [--placement:bottom] inline-block">
+                        <a
+                          href={cert.link}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="hs-tooltip-toggle text-center text-gray-800 dark:text-white hover:text-red-800 hover:dark:text-red-500"
+                        >
+                          {/* =========== CERTIFICATE NAME =========== */}
+                          <p className=" transition duration-700 px-6 font-bold">
+                            {cert.title}
+                          </p>
+                          {/* =========== CERTIFICATE DESCRIPTION =========== */}
+                          <p className=" transition duration-700 px-6 text-sm">
+                            {cert.description}
+                          </p>
+                        </a>
+
+                        {/* =========== TOOLTIP TEXT =========== */}
+                        <span
+                          className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-white border dark:border-zinc-800 dark:bg-zinc-950 text-xs font-medium dark:text-white rounded shadow-sm"
+                          role="tooltip"
+                        >
+                          Open Certificate
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -114,12 +151,11 @@ function EducationAndExperience() {
               </svg>
             </span>
           </button>
-          
+
           {/* =========== CAROUSEL PAGINATION =========== */}
-          
         </div>
       </div>
-      
+
       {/* =========== EXPERIENCE =========== */}
       <div className="w-full">
         {/* =========== EXPERIENCE TITLE =========== */}
@@ -128,10 +164,7 @@ function EducationAndExperience() {
           Experience
         </h4>
 
-        <div className="md:h-[480px] md:overflow-y-scroll scroll-smooth">
-         
-          
-        </div>
+        <div className="md:h-[480px] md:overflow-y-scroll scroll-smooth"></div>
       </div>
     </section>
   );
