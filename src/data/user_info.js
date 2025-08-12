@@ -27,14 +27,18 @@ const info = {
         "React, Node.js, Express, MongoDB, Firebase, JWT, TanStack Query",
       github: "https://github.com/tasinvoid/buildia-client",
       link: "https://buildia-92b37.web.app/",
+      challenges:
+        "Implementing robust, role-based access control across multiple dashboards and ensuring the security of private routes with JWT middleware.",
     },
     {
       title: "Sproutly: A Gardening Community Hub",
       description:
-        "A vibrant community platform for gardening enthusiasts. It enables users to share tips, find local gardeners, and engage in discussions on various topics from plant care to composting.",
+        "A full-stack web application to build A vibrant community platform for gardening enthusiasts. It enables users to share tips, find local gardeners, and engage in discussions on various topics from plant care to composting.Everything you need ",
       technologies: "React, Node.js, Express, MongoDB, Firebase",
       github: "https://github.com/tasinvoid/A10-Sproutly-client",
       link: "https://sproutly-515fc.web.app/",
+      challenges:
+        "Implementing a complex filtering system for user-generated content and managing the state for a seamless dark/light theme toggle.",
     },
     {
       title: "Food-circle: A Food Sharing Platform",
@@ -44,6 +48,7 @@ const info = {
         "React, Node.js, Express, MongoDB, Firebase, JWT, Framer Motion, TanStack Query",
       github: "https://github.com/tasinvoid/food-circle-client",
       link: "https://food-circle-fce91.web.app/",
+      challenges: "Handling real-time updates and managing concurrent requests within the food sharing system, while optimizing performance for a dynamic list of items."
     },
   ],
   // ============ EDUCATION ============
@@ -52,11 +57,13 @@ const info = {
       school: "Yunnan University",
       degree: "Bachelor of Electrical Information Engineering",
       duration: "2018 - 2022",
+      image: "https://i.ibb.co.com/GQqBbSFh/png-clipart-yunnan-university-yunnan-normal-university-yulin-normal-university-somaiya-vidyavihar.png"
     },
     {
       school: "Programming Hero",
       degree: "Web Development",
       duration: "2025 - 2025",
+      image: "https://i.ibb.co.com/dsfBdL3S/Ix-I18-R8-Y-400x400.jpg"
     },
   ],
 
@@ -68,7 +75,7 @@ const info = {
   },
 
   // ============ FOOTER ============
-  footer: "© 2024 Daniel Shan Balico. All Rights Reserved",
+  footer: "© 2025 Shoaib Mahmud Tasin. All Rights Reserved",
 };
 
 export default info;

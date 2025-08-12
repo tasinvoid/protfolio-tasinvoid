@@ -1,6 +1,6 @@
 import { AppContext } from "../App.jsx";
 import { useContext, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router";
 
 import ToggleTheme from "../components/ToggleTheme.jsx";
 
@@ -26,7 +26,7 @@ function Homepage() {
 
         <Hero />
         <Projects />
-        <EducationAndExperience />
+				<EducationAndExperience />
         <Skills />
         <Contact />
 
